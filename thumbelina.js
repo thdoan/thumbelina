@@ -32,15 +32,15 @@
         // Depending on vertical or horizontal, get functions to call and CSS attribute to change.
         if (settings.orientation === 'vertical') {
             orientData = {
-                outerSizeFunc: 'outerHeight',
-                cssAttr: 'top',
-                display: 'block'
+                'outerSizeFunc': 'outerHeight',
+                'cssAttr': 'top',
+                'display': 'block'
             };
         } else {
             orientData = {
-                outerSizeFunc: 'outerWidth',
-                cssAttr: 'left',
-                display: 'inline-block'
+                'outerSizeFunc': 'outerWidth',
+                'cssAttr': 'left',
+                'display': 'inline-block'
             };
         }
 
@@ -118,12 +118,12 @@
     };
 
     $.fn.Thumbelina.defaults = {
-        orientation: 'horizontal', // Orientation mode, horizontal or vertical.
-        easing: 8,                 // Amount of easing (min 1) larger = more drift.
-        maxSpeed: 5,               // Max speed of movement (pixels per cycle).
-        $bwdBut: null,             // jQuery element used as backward button.
-        $fwdBut: null,             // jQuery element used as forward button.
-        onReady: function(){}      // Callback when slider is loaded.
+        'orientation': 'horizontal', // Orientation mode, horizontal or vertical.
+        'easing': 8,                 // Amount of easing (min 1) larger = more drift.
+        'maxSpeed': 5,               // Max speed of movement (pixels per cycle).
+        '$bwdBut': null,             // jQuery element used as backward button.
+        '$fwdBut': null,             // jQuery element used as forward button.
+        'onReady': function(){}      // Callback when slider is loaded.
     };
 
 })(jQuery);
